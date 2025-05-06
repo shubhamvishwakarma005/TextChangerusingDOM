@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice</title>
+
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            background-color: black;
+            color: aliceblue;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .container{
+           text-align: center;
+        }
+
+        #name{ 
+            color: red;
+            font-size: 60px;
+        }
+
+        .click{
+            font-size: 16px;
+            padding: 10px 20px;
+            color: rgb(0, 119, 255);
+            font-weight: 900;
+            background-color: rgb(197, 197, 11);
+          
+         }
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <h1 id="name">Hello Dom</h1>
+        <button class="click" onclick=" changename()">Login</button>
+    </div>
+
+    <script>
+
+        function changename(name){
+            name = prompt(`Enter your name :`);
+            document.getElementById("name").textContent =`Hello ${name}`.toUpperCase();
+        }
+        
+    </script>
+</body>
+</html>
